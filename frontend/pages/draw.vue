@@ -51,7 +51,6 @@ export default {
         this.currentDraw = response
         this.previousDraws.unshift(response)
       } catch (error) {
-        // console.error('Error performing draw:', error)
         alert('Error performing draw. Please try again.')
       }
     },
