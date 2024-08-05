@@ -19,9 +19,9 @@ from rest_framework.routers import DefaultRouter
 from api.views import ParticipantViewSet, BlacklistViewSet, DrawViewSet
 
 router = DefaultRouter()
-router.register(r'participants', ParticipantViewSet)
-router.register(r'blacklists', BlacklistViewSet)
-router.register(r'draws', DrawViewSet)
+router.register(r'api/participants', ParticipantViewSet)
+router.register(r'api/blacklists', BlacklistViewSet)
+router.register(r'api/draws', DrawViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
