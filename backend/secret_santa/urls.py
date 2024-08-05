@@ -25,4 +25,5 @@ router.register(r'api/draws', DrawViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+        path('blacklist/<int:participant_id>/<str:email>/', BlacklistViewSet.as_view({'delete': 'remove_blacklist'})),
 ]
